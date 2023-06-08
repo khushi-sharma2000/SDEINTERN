@@ -1,4 +1,13 @@
-// QUESTION 6 BANKING
+// Banking works by transferring money from account A to account B. Most of the time account A is in one bank while account B is another bank.
+
+Suppose someone writes an implementation for such a money transfer.
+
+1 What are the test cases?
+2 What are the issues in such a system?
+3 What can we do to mitigate some of the issues ?
+4 Write the code yourself to demonstrate the mitigations.
+
+ANSWER:-
 
 1)Test Cases:
 
