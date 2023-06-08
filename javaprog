@@ -1,0 +1,36 @@
+public class AddNumbers {
+    public static String addNumbers(String val_a, String val_b) {
+        // Convert input strings to integers
+        int num_a = Integer.parseInt(val_a);
+        int num_b = Integer.parseInt(val_b);
+
+        // Add the numbers
+        int sum_result = num_a + num_b;
+
+        // Convert the sum back to a string and return
+        return Integer.toString(sum_result);
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        // Test case 1: Positive integers
+        String result1 = addNumbers("10", "20");
+        System.out.println(result1);  // Output: "30"
+
+        // Test case 2: Negative integers
+        String result2 = addNumbers("-5", "-8");
+        System.out.println(result2);  // Output: "-13"
+
+        // Test case 3: Positive and negative integers
+        String result3 = addNumbers("10", "-5");
+        System.out.println(result3);  // Output: "5"
+
+        // Test case 4: Zero and positive integer
+        String result4 = addNumbers("0", "15");
+        System.out.println(result4);  // Output: "15"
+
+        // Test case 5: Large numbers
+        String result5 = addNumbers("12345678901234567890", "98765432109876543210");
+        System.out.println(result5);  // Output: "111111111011111111100"
+    }
+}
