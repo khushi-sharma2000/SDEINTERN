@@ -1,5 +1,5 @@
 //Write a program to add two integers to be taken as string and which returns a string and come up with the test cases to verify the output
-function string addNumbers (string val_a, string val_b)
+//function string addNumbers (string val_a, string val_b)
 
 import java.util.*;
 class SumString
