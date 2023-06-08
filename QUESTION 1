@@ -1,3 +1,12 @@
+//Mandatory : Elaborate how you tested your internship or academic projects.
+a What did the system used to do?
+b What other systems have you seen in the wild like that?
+c How do you approach the testing problem?
+d What were interesting bugs?
+e How did you fix them?
+
+
+
 a. I utilised a methodical approach with various steps and tools to evaluate my professional and academic projects. The system under test (SUT) would perform various tasks depending on the type of employment. For instance, if I were developing a web application, the system could include user registration, logon, data entry, and retrieval.
 
 I frequently created test environments that were nearly identical to the production environment in order to simulate actual situations. This required building up databases, configuring servers, and ensuring that all requirements were met. I also utilised test data generators or simulated data to create a genuine test sample.
