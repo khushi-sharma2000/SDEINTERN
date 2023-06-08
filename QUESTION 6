@@ -1,0 +1,53 @@
+// QUESTION 6 BANKING
+
+1)Test Cases:
+
+    ->Move the money from account A to account B without any problems.
+    ->Make sure that the right amount was taken out of account A and put into account B.
+    ->Make sure the transfer doesn't work by making sure account A has a negative amount.
+    ->Check that the move fails if either account A or account B has an invalid account number.
+    ->Check that both account A and account B's transaction information has been updated correctly.
+    ->Test account A and account B with different currencies and make sure that currency conversions (if needed) are done properly.
+    ->Perform transfers from multiple accounts at the same time and make sure the system handles them properly and doesn't mix up the data.
+    ->Test with different transfer amounts, including zero and the highest amount that can be transferred.
+    ->Test how the system responds and handles errors when things go wrong, like when the network goes down, the system crashes, or time runs out.
+
+2)Things wrong with the system:
+
+    ->It can be hard to make sure that the transfer process keeps data accurate and consistent across multiple organisations.
+    ->For security, it is important to use the right authentication, authorization, and encryption methods to protect private customer data and stop unauthorised access.
+    ->To make sure the system is reliable, it must know how to deal with exceptions, timeouts, and network problems.
+    ->Managing deals and multiple users at the same time: Handling transfers at the same time and making sure that transactions are the same across various institutions can lead to problems like deadlocks, race conditions, and states that don't match up.
+    ->If the transfer involves more than one currency, the right amount must be sent by using accurate and up-to-date currency conversion rates.
+
+3)What to do about the problems:
+
+    ->When talking between institutions, use secure methods and encryption to keep data safe while it is being sent.
+    ->Set up strong authentication and authorization methods to make sure that only people who are allowed to can start transfers.
+    ->Set up a lot of error handling and monitoring so that error messages are helpful and debugging is easier if something goes wrong.
+    ->Use methods for managing transactions, like two-phase commit or optimistic concurrency control, to make sure that transfers are consistent.
+    ->Keep track of and regularly update the exchange rates for different currencies to make accurate changes.
+    ->Before you launch, you should do a lot of testing, like unit tests, integration tests, and stress tests, to find and fix any problems.
+    ->Keep an eye on how the system is working and look for any unusual or strange behaviour to stop problems from happening.
+
+4)
+public class MoneyTransferService {
+    // Assuming Account A and Account B objects are available
+
+    public synchronized void transferMoney(Account accountA, Account accountB, double amount) {
+        // Check if Account A has sufficient balance
+        if (accountA.getBalance() >= amount) {
+            // Deduct amount from Account A
+            accountA.deductBalance(amount);
+
+            // Add amount to Account B
+            accountB.addBalance(amount);
+
+            // Update transaction history for both accounts
+            accountA.addTransactionHistory("Transfer to Account B: -$" + amount);
+            accountB.addTransactionHistory("Transfer from Account A: +$" + amount);
+        } else {
+            throw new InsufficientBalanceException("Insufficient balance in Account A");
+        }
+    }
+}
