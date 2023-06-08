@@ -1,0 +1,46 @@
+a. I utilised a methodical approach with various steps and tools to evaluate my professional and academic projects. The system under test (SUT) would perform various tasks depending on the type of employment. For instance, if I were developing a web application, the system could include user registration, logon, data entry, and retrieval.
+
+I frequently created test environments that were nearly identical to the production environment in order to simulate actual situations. This required building up databases, configuring servers, and ensuring that all requirements were met. I also utilised test data generators or simulated data to create a genuine test sample.
+
+
+b. I utilised various testing systems or frameworks based on the requirements of the task. These are some of the most prevalent systems:
+
+    Frameworks for unit testing: I utilised frameworks such as JUnit for Java and PyTest for Python to test distinct parts or sections of code. These systems allowed me to create test cases to ensure that functions and methods performed as intended.
+
+    I utilised frameworks such as Selenium for web applications and REST-assured for testing APIs to test how various parts or modules interact. These frameworks provided the means to regulate user interaction with the system and ensure its proper operation.
+
+    I utilised performance testing tools such as Apache JMeter and Gatling to evaluate how well the system performed under extreme stress. With these tools, I could simulate a large number of users or queries in order to identify bottlenecks, measure response times, and assess the system's scalability.
+
+c. Listed below are the general steps I followed to resolve the testing issue:
+
+    I began by reviewing the project requirements and specifications to determine how the system should function. Based on this analysis, I created a test plan that included the testing scope, objectives, and test strategies.
+
+    I created test cases that covered various system components, including positive and negative events, fringe cases, and boundary conditions. I also ranked the test cases based on their significance and their potential impact on the system.
+
+    I executed the test cases according to the test plan and recorded the test results. I utilised both manual testing and test automation tools, depending on the project's difficulty and requirements.
+
+    Problem reporting: Whenever I discovered a problem or bug during testing, I logged it in a system for monitoring problems. I provided detailed information about the issue, how to reproduce it, and any relevant logs or screenshots.
+
+    After discovering and reporting defects, the development team investigated the issues and began working to resolve them. Frequently, they required repairing the code, determining what went wrong, and making the necessary adjustments.
+
+    After the bug fixes were implemented, I retested the affected areas to ensure that the issues were resolved and the system functioned as anticipated. This step ensured that all defects had been eliminated and the system was stable.
+
+d. Each endeavour may have unique bugs of interest, but here are a few I discovered during testing:
+
+    Problems with data validation: I discovered instances in which the system accepted incorrect data or did not adhere to the correct validation standards. A web form may, for instance, allow special characters in a field that should only accept alphanumeric characters.
+
+    Performance bottlenecks: When testing was conducted when there was a great deal going on, performance issues such as sluggish response times or excessive resource consumption were frequently discovered. It was difficult to locate these errors, and performance profiling and analysis were required to identify the bottlenecks.
+
+    Compatibility issues: Occasionally, the system did not function properly on certain operating systems, browsers, or devices. For these compatibility issues to be identified and resolved, testing had to be conducted on numerous systems.
+
+e. The majority of the time, the development team had to collaborate in order to resolve bugs. Depending on the issue, the procedure varied, but in general, the following stages were taken:
+
+    The development team examined the submitted problem reports and any additional information or logs that were included. They were able to reproduce the issue, examine the code, and determine what caused it.
+
+    As soon as the authors determined what caused the issue, they rectified it. This included modifying the code, correcting logical errors, and resolving any other issues that led to the flaw.
+
+    Other team members reviewed the modifications to the code before incorporating them into the main version. This step ensured that the adjustments were correct and effective, and also helped identify any potential side effects.
+
+    Regression testing: After the fixes were implemented, I retested the affected features to ensure that the bug was indeed resolved and no new issues were introduced. Regression testing also demonstrated the system's overall stability.
+
+    Once the fixes cleared regression testing, they were deployed to either the production or staging environment, depending on the project's release process. People frequently utilised monitoring tools to observe how the system performed after the repair.
